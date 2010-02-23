@@ -9,7 +9,7 @@
   2005. Adds 0.5 to each cell before constructing the Wald CI
 }
 \usage{
-diffpropci.mp(b, c, n, conflev)
+diffpropci.mp(b, c, n, conf.level)
 }
 \arguments{
   \item{b}{
@@ -21,7 +21,7 @@ diffpropci.mp(b, c, n, conflev)
   \item{n}{
    sample size
   }
-  \item{conflev}{
+  \item{conf.level}{
     confidence coefficient
   }
 }
@@ -29,14 +29,15 @@ diffpropci.mp(b, c, n, conflev)
   The interval is truncated, when it overshoots the boundary
 }
 \value{
-  \item{ll }{lower bound of CI}
-  \item{ul }{upper bound of CI}
+  A list with class '"htest"' containing the following components:
+  \item{conf.int }{a confidence interval for the difference in proportions.}
+  \item{estimate }{estimated difference in proportions }
 }
 \references{
   A. Agresti and Y. Min, 2004. Improved confidence intervals for comparing matched proportions, Statistics in Medicine
 }
 \examples{
-diffpropci.mp(b = 40, c = 20, n = 160, conflev = 0.95)
+diffpropci.mp(b = 40, c = 20, n = 160, conf.level = 0.95)
 }
 
 \keyword{ htest }

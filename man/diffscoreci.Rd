@@ -1,8 +1,7 @@
 \name{diffscoreci}
-\Rdversion{0.1-1}
 \alias{diffscoreci}
 \title{
-  Score interval for difference of proportions and independent samples (p1 - p2)
+  Score interval for difference of proportions
 }
 \description{
   Score interval for difference of proportions and independent samples (p1 - p2)
@@ -32,6 +31,8 @@ diffscoreci(x1, n1, x2, n2, conflev)
   \item{ul }{upper confidence limit}
 }
 \references{
+  Agresti, A. 2002. Categorical Data Analysis. Wiley, 2nd Edition.
+
   Mee RW. Confidence bounds for the difference between two
   probabilities. Biometrics 1984;40:1175-1176.
 
@@ -40,7 +41,5 @@ diffscoreci(x1, n1, x2, n2, conflev)
 
   Nurminen, 1986. Analysis of trends in proportions with an ordinally
   scaled determinant. Biometrical J. v28. 965-974
-
-  Agresti, A. 2002. Categorical Data Analysis. Wiley, 2nd Edition.
 }
 \keyword{ htest }

@@ -1,5 +1,4 @@
 \name{exactci}
-\Rdversion{0.1-1}
 \alias{exactci}
 \title{
   Clopper-Pearson exact CI

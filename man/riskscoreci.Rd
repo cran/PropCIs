@@ -1,5 +1,4 @@
 \name{riskscoreci}
-\Rdversion{0.1-1}
 \alias{riskscoreci}
 \title{
   score confidence interval for a relative risk in a 2x2 table

@@ -1,5 +1,4 @@
 \name{blakerci}
-\Rdversion{0.1-1}
 \alias{blakerci}
 \title{
   Blaker's exact CI for a binomial proportion
@@ -8,12 +7,12 @@
   Blaker's exact CI for a binomial proportion
 }
 \usage{
-blakerci(x, n, level, tolerance=1e-05)
+blakerci(x, n, conf.level, tolerance=1e-05)
 }
 \arguments{
   \item{x}{Number of successes}
   \item{n}{Total sample size}
-  \item{level}{Confidence level}
+  \item{conf.level}{Confidence level}
   \item{tolerance}{default tolerance}
 }
 \value{

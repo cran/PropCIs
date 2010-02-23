@@ -1,8 +1,7 @@
 \name{scoreci}
 \Rdversion{0.1-1}
 \alias{scoreci}
-\title{Wilson's confidence interval for a single proportion. Score CI based on inverting the asymptotic normal test
-  using the null standard error
+\title{Wilson's confidence interval for a single proportion
 }
 \description{Wilson's confidence interval for a single proportion. Score CI based on inverting the asymptotic normal test
   using the null standard error}
