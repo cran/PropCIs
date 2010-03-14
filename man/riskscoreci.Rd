@@ -7,7 +7,7 @@
   score confidence interval for a relative risk in a 2x2 table
 }
 \usage{
-riskscoreci(x1, n1, x2, n2, conflev)
+riskscoreci(x1, n1, x2, n2, conf.level)
 }
 \arguments{
   \item{x1}{
@@ -22,7 +22,7 @@ riskscoreci(x1, n1, x2, n2, conflev)
   \item{n2}{
     sample size in sample 2
   }
-  \item{conflev}{
+  \item{conf.level}{
     confidence coefficient
   }
 }

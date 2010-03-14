@@ -10,12 +10,12 @@
   binomial parameter with the off-diagonal counts.
 }
 \usage{
-oddsratioci.mp(b, c, conflev)
+oddsratioci.mp(b, c, conf.level)
 }
 \arguments{
   \item{b}{off-diagonal count}
   \item{c}{off-diagonal count}
-  \item{conflev}{confidence coefficient}
+  \item{conf.level}{confidence coefficient}
 }
 \value{
   \item{ll }{lower confidence bound}
@@ -26,6 +26,6 @@ oddsratioci.mp(b, c, conflev)
   comparing matched proportions, Statistics in Medicine
 }
 \examples{
-oddsratioci.mp(b = 40, c = 20, conflev = 0.95)
+oddsratioci.mp(b = 40, c = 20, conf.level = 0.95)
 }
 \keyword{ htest }

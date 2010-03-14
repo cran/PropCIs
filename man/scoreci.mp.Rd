@@ -8,13 +8,13 @@
   matched pairs
  }
 \usage{
-scoreci.mp(b, c, n, conflev)
+scoreci.mp(b, c, n, conf.level)
 }
 \arguments{
   \item{b}{off-diagonal count}
   \item{c}{off-diagonal count}
   \item{n}{sample size}
-  \item{conflev}{confidence coefficient}
+  \item{conf.level}{confidence coefficient}
 }
 \value{
   \item{ll }{lower confidence bound}
@@ -26,5 +26,5 @@ scoreci.mp(b, c, n, conflev)
 
   Tango T. Equivalence test and confidence interval for the difference in proportions for the paired-sample design. Statistics in Medicine. 1998; 17: 891-908
 }
-\examples{scoreci.mp(b = 40, c = 20, n = 160, conflev = 0.95)}
+\examples{scoreci.mp(b = 40, c = 20, n = 160, conf.level = 0.95)}
 \keyword{ htest }

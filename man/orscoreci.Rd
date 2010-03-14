@@ -1,14 +1,13 @@
 \name{orscoreci}
-\Rdversion{0.1-1}
 \alias{orscoreci}
 \title{
-  score confidence interval for an odds ratio in a 2x2 table [p1(1-p1)/(p2(1-p2))]
+  Score confidence interval for an odds ratio in a 2x2 table
 
 }
 \description{
-  score confidence interval for an odds ratio in a 2x2 table [p1(1-p1)/(p2(1-p2))]}
+  Score confidence interval for an odds ratio in a 2x2 table \eqn{p1(1-p1)/(p2(1-p2))}}
 \usage{
-orscoreci(x1, n1, x2, n2, conflev)
+orscoreci(x1, n1, x2, n2, conf.level)
 }
 \arguments{
   \item{x1}{
@@ -23,7 +22,7 @@ orscoreci(x1, n1, x2, n2, conflev)
   \item{n2}{
     sample size in sample 2
   }
-  \item{conflev}{
+  \item{conf.level}{
     confidence coefficient
   }
 }

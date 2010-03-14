@@ -7,7 +7,7 @@
   Score interval for difference of proportions and independent samples (p1 - p2)
 }
 \usage{
-diffscoreci(x1, n1, x2, n2, conflev)
+diffscoreci(x1, n1, x2, n2, conf.level)
 }
 \arguments{
   \item{x1}{
@@ -22,7 +22,7 @@ diffscoreci(x1, n1, x2, n2, conflev)
   \item{n2}{
     sample size in sample 2
   }
-  \item{conflev}{
+  \item{conf.level}{
     confidence coefficient
   }
 }

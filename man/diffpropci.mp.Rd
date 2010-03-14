@@ -29,7 +29,7 @@ diffpropci.mp(b, c, n, conf.level)
   The interval is truncated, when it overshoots the boundary
 }
 \value{
-  A list with class '"htest"' containing the following components:
+  A list with class "htest" containing the following components:
   \item{conf.int }{a confidence interval for the difference in proportions.}
   \item{estimate }{estimated difference in proportions }
 }

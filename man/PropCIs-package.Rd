@@ -1,9 +1,9 @@
 \name{PropCIs-package}
-\Rdversion{0.1-5}
+\Rdversion{0.1-6}
 \alias{PropCIs-package}
 \docType{package}
 \title{
-Computes confidence intervals for proportions
+Computes confidence intervals for proportions in a 2x2 table
 }
 \description{
 Computes confidence intervals for single proportions, for differences in
@@ -15,8 +15,8 @@ The functions are written by Alan Agresti and students, see http://www.stat.ufl.
 \tabular{ll}{
 Package: \tab PropCIs\cr
 Type: \tab Package\cr
-Version: \tab 0.1-5\cr
-Date: \tab 2010-02-23\cr
+Version: \tab 0.1-6\cr
+Date: \tab 2010-03-14\cr
 License: \tab GPL=2\cr
 LazyLoad: \tab yes\cr
 }
@@ -46,7 +46,7 @@ Maintainer: Ralph Scherer <scherer.ralph@mh-hannover.de>
   Chapman & Hall
 
   Blaker, H. 2000. Confidence curves and improved exact confidence
-  intervals for discrete distributions, CANADIAN JOURNAL OF STATISTICS,
+  intervals for discrete distributions, Canadian Journal of Statistics,
   Vol: 28, iss: 4, pg: 783-798
 
   Koopman PAR. Confidence limits for the ratio of two binomial
@@ -62,8 +62,7 @@ Maintainer: Ralph Scherer <scherer.ralph@mh-hannover.de>
   scaled determinant. Biometrical J. v28. 965-974
 
   Olivier, J. and May, W. L. 2006. Weighted confidence interval
-  construction for binomial parameters, STATISTICAL METHODS IN MEDICAL
-  RESEARCH, Vol: 15, iss:1, pg: 37-46
+  construction for binomial parameters, Statistical Methods in Medical Research, Vol: 15, iss:1, pg: 37-46
 
   Wilson, E.B. 1927. Probable inference, the law of succession, and
   statistical inference. J. Amer. Stat. Assoc. 22:209-212

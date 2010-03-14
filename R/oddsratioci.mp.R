@@ -1,7 +1,7 @@
 oddsratioci.mp <-
-function(b,c,conflev)
+function(b,c,conf.level)
 {
-  z  <- qchisq(conflev,1)
+  z  <- qchisq(conf.level,1)
   A <- b + c + z
   B <- 2*c + z
   C <- c^2/(b+c)

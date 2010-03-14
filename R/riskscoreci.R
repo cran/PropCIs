@@ -1,7 +1,7 @@
 riskscoreci <-
-function(x1,n1,x2,n2,conflev)
+function(x1,n1,x2,n2,conf.level)
 {
-  z =  abs(qnorm((1-conflev)/2))
+  z =  abs(qnorm((1-conf.level)/2))
   if ((x2==0) &&(x1==0)){
     ul = Inf
     ll = 0
