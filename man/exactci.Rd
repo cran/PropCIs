@@ -7,19 +7,20 @@
   Clopper-Pearson exact CI
 }
 \usage{
-exactci(x, n, conf.level)
+exactci(x, n, conflev)
 }
 \arguments{
   \item{x}{Number of successes}
   \item{n}{Total sample size}
-  \item{conf.level}{Confidence level}
+  \item{conflev}{Confidence level}
 }
 \value{
   \item{ll }{lower confidence bound}
   \item{ul }{upper confidence bound}
 }
-\examples{
-exactci(x = 15, n = 112, conf.level = 0.95)
+\references{
+  Clopper, C. and Pearson, E.S. (1934) The use of cenfidence or fiducial
+  limits illustrated in the case of the binomial. \emph{Biometrika} 26, 404--413. 
 }
 \keyword{ htest }
 

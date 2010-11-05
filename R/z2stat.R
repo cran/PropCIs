@@ -17,7 +17,8 @@ function (p1x,nx,p1y,ny,dif){
         w = (3.141592654+acos(v/u^3))/3
         p1d = 2*u*cos(w) - b/a/3
         p2d = p1d - dif
-        var = p1d*(1-p1d)/nx + p2d*(1-p2d)/ny
+        nxy = nx + ny
+        var = (p1d*(1-p1d)/nx + p2d*(1-p2d)/ny) * nxy / (nxy - 1) ## added: * nxy / (nxy - 1)
         fmdiff = diff^2/var
       }
   return(fmdiff)

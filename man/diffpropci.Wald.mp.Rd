@@ -33,7 +33,7 @@ diffpropci.Wald.mp(b, c, n, conf.level)
   \item{estimate }{estimated difference in proportions c-b/n}
 }
 \references{
-  D. G. Altman, 1999. Practical statistics for medical research. London,
+  D. G. Altman (1999) Practical statistics for medical research. London,
   Chapman & Hall
 }
 \examples{

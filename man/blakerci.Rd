@@ -20,8 +20,8 @@ blakerci(x, n, conf.level, tolerance=1e-05)
   \item{upper }{upper confidence bound}
 }
 \references{
-  Blaker, H. 2000. Confidence curves and improved exact confidence
-  intervals for discrete distributions, Canadian Journal of Statistics,
-  Vol: 28, iss: 4, pg: 783-798
+  Blaker, H. (2000). Confidence curves and improved exact confidence
+  intervals for discrete distributions, \emph{Canadian Journal of Statistics}
+  28 (4), 783--798
 }
 \keyword{ htest }

@@ -1,8 +1,8 @@
 diffscoreci <-
-function(x1,n1,x2,n2,conf.level){ 
+function(x1,n1,x2,n2,conflev){ 
    px = x1/n1
    py = x2/n2
-   z = qchisq(conf.level,1)
+   z = qchisq(conflev,1)
    proot = px-py
    dp = 1-proot
    niter = 1

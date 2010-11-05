@@ -1,6 +1,6 @@
 exactci <-
-function(x,n,conf.level){
-   alpha <- (1 - conf.level)
+function(x,n,conflev){
+   alpha <- (1 - conflev)
    if (x == 0) {
       ll <- 0
       ul <- 1 - (alpha/2)^(1/n)

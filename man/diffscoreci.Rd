@@ -7,7 +7,7 @@
   Score interval for difference of proportions and independent samples (p1 - p2)
 }
 \usage{
-diffscoreci(x1, n1, x2, n2, conf.level)
+diffscoreci(x1, n1, x2, n2, conflev)
 }
 \arguments{
   \item{x1}{
@@ -22,7 +22,7 @@ diffscoreci(x1, n1, x2, n2, conf.level)
   \item{n2}{
     sample size in sample 2
   }
-  \item{conf.level}{
+  \item{conflev}{
     confidence coefficient
   }
 }
@@ -31,15 +31,15 @@ diffscoreci(x1, n1, x2, n2, conf.level)
   \item{ul }{upper confidence limit}
 }
 \references{
-  Agresti, A. 2002. Categorical Data Analysis. Wiley, 2nd Edition.
+  Agresti, A. (2002) Categorical Data Analysis. Wiley, 2nd Edition.
 
-  Mee RW. Confidence bounds for the difference between two
-  probabilities. Biometrics 1984;40:1175-1176.
+  Mee, RW. (1984) Confidence bounds for the difference between two
+  probabilities. \emph{Biometrics} 40, 1175--1176.
 
-  Miettinen OS, Nurminen M. Comparative analysis of two
-  rates. Statistics in Medicine 1985;4:213-226.
+  Miettinen OS, Nurminen M. (1985) Comparative analysis of two
+  rates. \emph{Statistics in Medicine} 4, 213--226.
 
-  Nurminen, 1986. Analysis of trends in proportions with an ordinally
-  scaled determinant. Biometrical J. v28. 965-974
+  Nurminen, M. (1986) Analysis of trends in proportions with an ordinally
+  scaled determinant. \emph{Biometrical J.} 28, 965--974
 }
 \keyword{ htest }

@@ -25,9 +25,9 @@ midPci(x, n, alpha)
   \item{uplim }{upper confidence bound}
 }
 \references{
-  Agresti, A., Gottard, A. (2005): Randomized confidence intervals and
+  Agresti, A., Gottard, A. (2005) Randomized confidence intervals and
   the mid-P approach, discussion of article by C. Geyer and G. Meeden,
-  Statistical Science, vol. 20, pp. 367-371
+  \emph{Statistical Science} 20, 367--371.
 }
 \examples{
 midPci(x = 15, n = 112, alpha = 0.05)

@@ -27,9 +27,13 @@ add4ci(x, n, conf.level)
   \item{ul }{upper confidence bound}
 }
 \references{
-  Agresti, A., Coull, B. (1998): Approximate is better than exact for interval estimation of binomial proportions. The American Statistician
+  Agresti, A., Coull, B. (1998) Approximate is better than exact for
+  interval estimation of binomial proportions. \emph{The American
+    Statistician} 52, 119--126.
 
-  Agresti, A., Caffo, B.(2000): Simple and effective confidence intervals for proportions and difference of proportions result from adding two successes and two failures, The American Statistician
+  Agresti, A., Caffo, B.(2000) Simple and effective confidence intervals
+  for proportions and difference of proportions result from adding two
+  successes and two failures. \emph{The American Statistician} 54 (4), 280--288.
 }
 \examples{
 add4ci(x = 15, n = 112, conf.level = 0.95)

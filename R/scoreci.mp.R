@@ -1,8 +1,8 @@
 scoreci.mp <-
-function(b,c,n,conf.level)
+function(b,c,n,conflev)
 {
    pa = 2*n
-   z = qnorm(1-(1-conf.level)/2)
+   z = qnorm(1-(1-conflev)/2)
 
    if(c == n) {ul = 1}
    else{

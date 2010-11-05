@@ -8,23 +8,24 @@
   matched pairs
  }
 \usage{
-scoreci.mp(b, c, n, conf.level)
+scoreci.mp(b, c, n, conflev)
 }
 \arguments{
   \item{b}{off-diagonal count}
   \item{c}{off-diagonal count}
   \item{n}{sample size}
-  \item{conf.level}{confidence coefficient}
+  \item{conflev}{confidence coefficient}
 }
 \value{
   \item{ll }{lower confidence bound}
   \item{ul }{upper confidence bound}
 }
 \references{
-  A. Agresti and Y. Min, 2004. Improved confidence intervals for
-  comparing matched proportions, Statistics in Medicine
+  Agresti, A. and Min, Y. (2005) Simple improved confidence intervals for
+  comparing matched proportions \emph{Statistics in Medicine} 24 (5), 729--740.
 
-  Tango T. Equivalence test and confidence interval for the difference in proportions for the paired-sample design. Statistics in Medicine. 1998; 17: 891-908
+  Tango T. (1998) Equivalence test and confidence interval for the
+  difference in proportions for the paired-sample design \emph{Statistics in Medicine} 17, 891--908
 }
-\examples{scoreci.mp(b = 40, c = 20, n = 160, conf.level = 0.95)}
+\examples{scoreci.mp(b = 40, c = 20, n = 160, conflev = 0.95)}
 \keyword{ htest }
