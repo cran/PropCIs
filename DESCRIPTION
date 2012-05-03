@@ -1,17 +1,14 @@
 Package: PropCIs
 Type: Package
-Title: Computes confidence intervals for single proportions, for
-        differences in proportions, for an odds-ratio and for the
-        relative risk in a 2x2 table
-Version: 0.1-7
-Date: 2010-11-05
+Title: Various confidence interval methods for proportions
+Version: 0.1-8
+Date: 2012-05-03
 Author: Ralph Scherer
 Maintainer: Ralph Scherer <scherer.ralph@mh-hannover.de>
 Description: Computes confidence intervals for single proportions and
-        confidence intervals for differences in proportions in a 2x2
-        table
+        differences of dependent and independent proportions
 License: GPL
 LazyLoad: yes
-Packaged: 2010-11-05 12:51:59 UTC; schererr
+Packaged: 2012-05-03 12:55:28 UTC; schererr
 Repository: CRAN
-Date/Publication: 2010-11-05 20:20:43
+Date/Publication: 2012-05-03 14:42:38

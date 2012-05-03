@@ -1,22 +1,24 @@
 \name{PropCIs-package}
-\Rdversion{0.1-7}
+\Rdversion{0.1-8}
 \alias{PropCIs-package}
 \docType{package}
 \title{
-Computes confidence intervals for proportions
+  Various confidence interval methods for proportions
 }
 \description{
-Computes confidence intervals for single proportions, for differences in
-proportions, for an odds-ratio and for the relative risk in a 2x2
-table. Intervals available for independent samples and matched pairs.
-The functions are written by Alan Agresti and students, see http://www.stat.ufl.edu/~aa/cda/cda.html.
+Computes confidence intervals for single proportions as well as for
+differences in dependent and independent
+proportions, the odds-ratio and the relative risk in a 2x2
+table. Intervals are available for independent samples and matched pairs.
+The functions are partly written by assistants of Alan Agresti, see
+website \url{http://www.stat.ufl.edu/~aa/cda/cda.html}.
 }
 \details{
 \tabular{ll}{
 Package: \tab PropCIs\cr
 Type: \tab Package\cr
-Version: \tab 0.1-7\cr
-Date: \tab 2010-11-05\cr
+Version: \tab 0.1-8\cr
+Date: \tab 2012-05-03\cr
 License: \tab GPL=2\cr
 LazyLoad: \tab yes\cr
 }
@@ -34,7 +36,7 @@ Maintainer: Ralph Scherer <scherer.ralph@mh-hannover.de>
   Agresti, A., Caffo, B.(2000) Simple and effective confidence intervals
   for proportions and difference of proportions result from adding two
   successes and two failures. \emph{The American Statistician} 54 (4), 280--288.
-  
+
   Agresti, A. (2002) Categorical Data Analysis. Wiley, 2nd Edition.
 
   Agresti, A. and Min, Y. (2005) Simple improved confidence intervals for
@@ -53,8 +55,8 @@ Maintainer: Ralph Scherer <scherer.ralph@mh-hannover.de>
 
   Clopper, C. and Pearson, E.S. (1934) The use of cenfidence or fiducial
   limits illustrated in the case of the binomial. \emph{Biometrika} 26,
-  404--413. 
-  
+  404--413.
+
   Koopman PAR. (1985) Confidence limits for the ratio of two binomial
   proportions. \emph{Biometrics} 40, 513--517.
 
@@ -67,10 +69,10 @@ Maintainer: Ralph Scherer <scherer.ralph@mh-hannover.de>
   Nam, J. M. (1995) Confidence limits for the ratio of two binomial
   proportions based on likelihood scores: Non-iterative
   method. \emph{Biom. J.} 37 (3), 375--379.
-  
+
   Nurminen, M. (1986) Analysis of trends in proportions with an ordinally
   scaled determinant. \emph{Biometrical J.} 28, 965--974.
-    
+
   Olivier, J. and May, W. L. (2006) Weighted confidence interval
   construction for binomial parameters \emph{Statistical Methods in
   Medical Research} 15 (1), 37--46.
@@ -78,7 +80,7 @@ Maintainer: Ralph Scherer <scherer.ralph@mh-hannover.de>
   Tango T. (1998) Equivalence test and confidence interval for the
   difference in proportions for the paired-sample design
   \emph{Statistics in Medicine} 17, 891--908.
-  
+
   Wilson, E. B. (1927) Probable inference, the law of succession, and
   statistical inference. \emph{J. Amer. Stat. Assoc.} 22, 209--212.
 }

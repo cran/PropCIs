@@ -1,8 +1,8 @@
 scoreci.mp <-
-function(b,c,n,conflev)
+function(b,c,n,conf.level)
 {
    pa = 2*n
-   z = qnorm(1-(1-conflev)/2)
+   z = qnorm(1-(1-conf.level)/2)
 
    if(c == n) {ul = 1}
    else{
@@ -45,6 +45,10 @@ function(b,c,n,conflev)
        }
       }
   }
-  c(ll,ul)
+   cint <- c(ll, ul)
+   attr(cint, "conf.level") <- conf.level
+   rval <- list(conf.int = cint)
+   class(rval) <- "htest"
+   return(rval)
 }
 

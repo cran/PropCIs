@@ -23,8 +23,9 @@ add4ci(x, n, conf.level)
 }
 }
 \value{
-  \item{ll }{lower confidence bound}
-  \item{ul }{upper confidence bound}
+  A list with class '"htest"' containing the following components:
+  \item{conf.int }{The confidence intervall for the proportion}
+  \item{estimate }{The estimator for the proportion}
 }
 \references{
   Agresti, A., Coull, B. (1998) Approximate is better than exact for

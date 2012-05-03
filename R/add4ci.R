@@ -7,6 +7,11 @@ function(x,n,conf.level){
    ll = ptilde - z * stderr
    if(ll < 0) ll = 0
    if(ul > 1) ul = 1
-   c(ll,ul)
+   cint <- c(ll, ul)
+   attr(cint, "conf.level") <- conf.level
+   rval <- list(conf.int = cint, estimate = ptilde)
+   class(rval) <- "htest"
+   return(rval)
+
 }
 

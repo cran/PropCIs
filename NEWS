@@ -8,3 +8,7 @@
 	  Statistics in Medicine 1985;4:213-226.
 
 	  Thanks to Tamas Ferenci.
+
+		Changes in PropCIs 0.1-8
+
+	# added htest output to various functions

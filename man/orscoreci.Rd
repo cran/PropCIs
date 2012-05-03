@@ -8,7 +8,7 @@
 \description{
   score confidence interval for an odds ratio in a 2x2 table [p1(1-p1)/(p2(1-p2))]}
 \usage{
-orscoreci(x1, n1, x2, n2, conflev)
+orscoreci(x1, n1, x2, n2, conf.level)
 }
 \arguments{
   \item{x1}{
@@ -23,13 +23,13 @@ orscoreci(x1, n1, x2, n2, conflev)
   \item{n2}{
     sample size in sample 2
   }
-  \item{conflev}{
+  \item{conf.level}{
     confidence coefficient \eqn{1-\alpha}
   }
 }
 \value{
-  \item{ll }{lower confidence limit}
-  \item{ul }{upper confidence limit}
+  A list with class '"htest"' containing the following components:
+  \item{conf.int }{a confidence interval for the difference in proportions.}
 }
 \references{
   Cornfield, J. (1956) A statistical problem arising from retrospective

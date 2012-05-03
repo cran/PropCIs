@@ -7,7 +7,7 @@
   score confidence interval for the relative risk in a 2x2 table
 }
 \usage{
-riskscoreci(x1, n1, x2, n2, conflev)
+riskscoreci(x1, n1, x2, n2, conf.level)
 }
 \arguments{
   \item{x1}{
@@ -22,19 +22,19 @@ riskscoreci(x1, n1, x2, n2, conflev)
   \item{n2}{
     sample size in sample 2
   }
-  \item{conflev}{
+  \item{conf.level}{
     confidence coefficient \eqn{1-\alpha}
   }
 }
 \value{
-  \item{ll }{lower confidence limit}
-  \item{ul }{upper confidence limit}
+  A list with class '"htest"' containing the following components:
+  \item{conf.int }{a confidence interval for the difference in proportions.}
 }
 \references{
   Nam, J. M. (1995) Confidence limits for the ratio of two binomial
   proportions based on likelihood scores: Non-iterative
   method. \emph{Biom. J.} 37 (3), 375--379.
-  
+
   Koopman PAR. (1985) Confidence limits for the ratio of two binomial
   proportions. \emph{Biometrics} 40, 513--517.
 

@@ -1,8 +1,8 @@
 diffscoreci <-
-function(x1,n1,x2,n2,conflev){ 
+function(x1,n1,x2,n2,conf.level){
    px = x1/n1
    py = x2/n2
-   z = qchisq(conflev,1)
+   z = qchisq(conf.level,1)
    proot = px-py
    dp = 1-proot
    niter = 1
@@ -15,8 +15,8 @@ function(x1,n1,x2,n2,conflev){
      if((dp<0.0000001) || (abs(z-score)<.000001)){
        niter = 51
        ul = up2}
-    } 
-   
+    }
+
    proot = px-py
    dp = 1+proot
    niter = 1
@@ -30,6 +30,10 @@ function(x1,n1,x2,n2,conflev){
      ll = low2
      niter = 51}
      }
- c(ll,ul)
+   cint <- c(ll,ul)
+   attr(cint, "conf.level") <- conf.level
+   rval <- list(conf.int = cint)
+   class(rval) <- "htest"
+   return(rval)
 }
 

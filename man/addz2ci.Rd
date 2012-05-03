@@ -10,7 +10,7 @@
   truncated, when it overshoots the boundary.
 }
 \usage{
-addz2ci(x, n, conflev)
+addz2ci(x, n, conf.level)
 }
 \arguments{
   \item{x}{
@@ -19,13 +19,14 @@ addz2ci(x, n, conflev)
   \item{n}{
     number of trials
 }
-  \item{conflev}{
+  \item{conf.level}{
     confidence coefficient
 }
 }
 \value{
-  \item{ll }{lower confidence bound}
-  \item{ul }{upper confidence bound}
+  A list with class '"htest"' containing the following components:
+  \item{conf.int }{The confidence intervall for the proportion}
+  \item{estimate }{The estimator for the proportion}
 }
 \references{
   Agresti, A., Coull, B. (1998): Approximate is better than exact for
@@ -33,6 +34,6 @@ addz2ci(x, n, conflev)
     Statistician} 52, 119--126.
 }
 \examples{
-addz2ci(x = 15, n = 112, conflev = 0.95)
+addz2ci(x = 15, n = 112, conf.level = 0.95)
 }
 \keyword{ htest }

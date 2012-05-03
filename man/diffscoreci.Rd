@@ -7,7 +7,7 @@
   Score interval for difference of proportions and independent samples (p1 - p2)
 }
 \usage{
-diffscoreci(x1, n1, x2, n2, conflev)
+diffscoreci(x1, n1, x2, n2, conf.level)
 }
 \arguments{
   \item{x1}{
@@ -22,13 +22,13 @@ diffscoreci(x1, n1, x2, n2, conflev)
   \item{n2}{
     sample size in sample 2
   }
-  \item{conflev}{
+  \item{conf.level}{
     confidence coefficient
   }
 }
 \value{
-  \item{ll }{lower confidence limit}
-  \item{ul }{upper confidence limit}
+    A list with class '"htest"' containing the following components:
+    \item{conf.int }{a confidence interval for the difference in proportions.}
 }
 \references{
   Agresti, A. (2002) Categorical Data Analysis. Wiley, 2nd Edition.

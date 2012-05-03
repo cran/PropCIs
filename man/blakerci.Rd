@@ -16,8 +16,8 @@ blakerci(x, n, conf.level, tolerance=1e-05)
   \item{tolerance}{default tolerance}
 }
 \value{
-  \item{lower }{lower confidence bound}
-  \item{upper }{upper confidence bound}
+  A list with class '"htest"' containing the following components:
+  \item{conf.int }{The confidence intervall for the proportion}
 }
 \references{
   Blaker, H. (2000). Confidence curves and improved exact confidence

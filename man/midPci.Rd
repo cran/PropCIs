@@ -7,7 +7,7 @@ mid-P confidence interval adaptation of the Clopper-Pearson interval
 mid-P confidence interval adaptation of the Clopper-Pearson interval
 }
 \usage{
-midPci(x, n, alpha)
+midPci(x, n, conf.level)
 }
 \arguments{
   \item{x}{
@@ -16,13 +16,13 @@ midPci(x, n, alpha)
   \item{n}{
  number of trials
 }
-  \item{alpha}{
-    Level-I error, 1 - confidence coefficient
+  \item{conf.level}{
+    confidence coefficient
   }
 }
 \value{
-  \item{lowlim }{lower confidence bound}
-  \item{uplim }{upper confidence bound}
+  A list with class '"htest"' containing the following components:
+  \item{conf.int }{a confidence interval for the difference in proportions.}
 }
 \references{
   Agresti, A., Gottard, A. (2005) Randomized confidence intervals and
@@ -30,6 +30,6 @@ midPci(x, n, alpha)
   \emph{Statistical Science} 20, 367--371.
 }
 \examples{
-midPci(x = 15, n = 112, alpha = 0.05)
+midPci(x = 15, n = 112, conf.level = 0.95)
   }
 \keyword{ htest }

@@ -1,14 +1,14 @@
 riskscoreci <-
-function(x1,n1,x2,n2,conflev)
+function(x1,n1,x2,n2,conf.level)
 {
-  z =  abs(qnorm((1-conflev)/2))
+  z =  abs(qnorm((1-conf.level)/2))
   if ((x2==0) &&(x1==0)){
     ul = Inf
     ll = 0
     }
-  else{  
+  else{
      a1 =  n2*(n2*(n2+n1)*x1+n1*(n2+x1)*(z^2))
-     a2 = -n2*(n2*n1*(x2+x1)+2*(n2+n1)*x2*x1+n1*(n2+x2+2*x1)*(z^2))  
+     a2 = -n2*(n2*n1*(x2+x1)+2*(n2+n1)*x2*x1+n1*(n2+x2+2*x1)*(z^2))
      a3 = 2*n2*n1*x2*(x2+x1)+(n2+n1)*(x2^2)*x1+n2*n1*(x2+x1)*(z^2)
      a4 = -n1*(x2^2)*(x2+x1)
      b1 = a2/a1
@@ -26,10 +26,10 @@ function(x1,n1,x2,n2,conflev)
      p0sum = p01+p02+p03
      p0up = min(p01,p02,p03)
      p0low = p0sum-p0up-max(p01,p02,p03)
-      
+
      if( (x2==0) && (x1!=0) ){
-        ll = (1-(n1-x1)*(1-p0low)/(x2+n1-(n2+n1)*p0low))/p0low 
-        ul = Inf 
+        ll = (1-(n1-x1)*(1-p0low)/(x2+n1-(n2+n1)*p0low))/p0low
+        ul = Inf
        }
      else if( (x2!=n2) && (x1==0)){
         ul = (1-(n1-x1)*(1-p0up)/(x2+n1-(n2+n1)*p0up))/p0up
@@ -57,25 +57,25 @@ function(x1,n1,x2,n2,conflev)
              var = (n2*n1*p2hat)/(n1*(phil-p2hat)+n2*q2hat)
              chi2 = ((x1-n1*p2hat)/q2hat)/sqrt(var)
              ll = phil
-             phil = ll/1.0001}} 
+             phil = ll/1.0001}}
          i = x2
          j = x1
-         ni = n2 
-         nj = n1 
-         if( x1==n1 ){               
+         ni = n2
+         nj = n1
+         if( x1==n1 ){
             i = x1
             j = x2
-            ni = n1 
+            ni = n1
             nj = n2
-         } 
+         }
          phat1  = i/ni
          phat2  =  j/nj
          phihat = phat2/phat1
          phiu = 1.1*phihat
-         if((x2==n2) && (x1==0)) { 
+         if((x2==n2) && (x1==0)) {
             if(n2<100) {phiu = .01}
             else {phiu=0.001}
-           } 
+           }
          chi1 = 0
          while (chi1 >= -z){
          a = (ni+nj)*phiu
@@ -91,17 +91,21 @@ function(x1,n1,x2,n2,conflev)
          }
 
          if(x1==n1) {
-          ul = (1-(n1-x1)*(1-p0up)/(x2+n1-(n2+n1)*p0up))/p0up  
-          ll = 1/phiu1       
+          ul = (1-(n1-x1)*(1-p0up)/(x2+n1-(n2+n1)*p0up))/p0up
+          ll = 1/phiu1
          }
-         else{ ul = phiu1}                        
-       }   
+         else{ ul = phiu1}
+       }
 
      else{
      ul = (1-(n1-x1)*(1-p0up)/(x2+n1-(n2+n1)*p0up))/p0up
-     ll = (1-(n1-x1)*(1-p0low)/(x2+n1-(n2+n1)*p0low))/p0low 
+     ll = (1-(n1-x1)*(1-p0low)/(x2+n1-(n2+n1)*p0low))/p0low
       }
-   }  
-  c(ll,ul)
+   }
+  cint <- c(ll, ul)
+  attr(cint, "conf.level") <- conf.level
+  rval <- list(conf.int = cint)
+  class(rval) <- "htest"
+  return(rval)
 }
 

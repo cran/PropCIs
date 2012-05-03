@@ -6,16 +6,16 @@
 \description{Wilson's confidence interval for a single proportion. Score CI based on inverting the asymptotic normal test
   using the null standard error}
 \usage{
-scoreci(x, n, conflev)
+scoreci(x, n, conf.level)
 }
 \arguments{
   \item{x}{Number of successes}
   \item{n}{Total sample size}
-  \item{conflev}{Confidence level}
+  \item{conf.level}{Confidence level}
 }
 \value{
-  \item{lowlim }{Lower endpoint for the 100*conflev interval}
-  \item{uplim }{Upper endpoint for the 100*conflev interval}
+  A list with class '"htest"' containing the following components:
+  \item{conf.int }{a confidence interval for the difference in proportions.}
 }
 \references{
   Wilson, E.B. (1927) Probable inference, the law of succession, and

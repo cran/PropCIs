@@ -10,6 +10,10 @@ function(x,n,conf.level,tolerance=1e-05){
             while (acceptbin(x, n, upper - tolerance) < (1 - conf.level))
               upper = upper-tolerance
           }
-  c(lower,upper)
+  cint <- c(lower,upper)
+  attr(cint, "conf.level") <- conf.level
+  rval <- list(conf.int = cint)
+  class(rval) <- "htest"
+  return(rval)
 }
 
