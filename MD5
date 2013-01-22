@@ -1,6 +1,6 @@
-2f09ed2cb0427e92c8a5479fd392eedd *DESCRIPTION
+63b02622e440fcbb4aba63a2749f223f *DESCRIPTION
 7a19fee4c642dcdee75ed9e371a6043e *NAMESPACE
-5924280d694072a6d3898664bb1b0852 *NEWS
+f0a58747e79a12fb1ff6c7ddb8c19a64 *NEWS
 40b17cd670345128860271830132af7d *R/acceptbin.R
 f98115f50752403e07552b5fda8ea9fb *R/add4ci.R
 c1db7c9846492d0b0f5d52817e77c3cb *R/addz2ci.R
@@ -16,9 +16,9 @@ b6e4eaf37c4079998ee3f917cd92cc4a *R/oddsratioci.mp.R
 f896fc634f02ff5e6ea8970a9ce3a2b2 *R/riskscoreci.R
 f6ad8b1c9c58233c4307bf46e28b40ae *R/scoreci.R
 5f66f502b14f178e7c54fb9fbcdff8e2 *R/scoreci.mp.R
-33186a36bae25aaef5f0ce34f2c5a97d *R/wald2ci.R
+8fdfbe8025ea13d4c65e85a7510fd588 *R/wald2ci.R
 02f7640485c9219f5dc2cf5b3a9b4384 *R/z2stat.R
-c8f0253ec1ea5c3f94c49360db49e22c *man/PropCIs-package.Rd
+6aaabe13b3e645a600b4fc1480a635ed *man/PropCIs-package.Rd
 8be96e905b0b11d67acad31a09e90e5b *man/acceptbin.Rd
 634fd2171f9b4b9e10f9cf8a0b31f1c6 *man/add4ci.Rd
 dac6477a2a528f1d6cef624f6138cdb2 *man/addz2ci.Rd
