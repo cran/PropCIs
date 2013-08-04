@@ -1,6 +1,6 @@
-63b02622e440fcbb4aba63a2749f223f *DESCRIPTION
-7a19fee4c642dcdee75ed9e371a6043e *NAMESPACE
-f0a58747e79a12fb1ff6c7ddb8c19a64 *NEWS
+6a45dbbe7ce02b5aea5f178ae9f8e69d *DESCRIPTION
+8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
+35bfde8fffa1961e9d45066f75b7fa2d *NEWS
 40b17cd670345128860271830132af7d *R/acceptbin.R
 f98115f50752403e07552b5fda8ea9fb *R/add4ci.R
 c1db7c9846492d0b0f5d52817e77c3cb *R/addz2ci.R
@@ -18,7 +18,8 @@ f6ad8b1c9c58233c4307bf46e28b40ae *R/scoreci.R
 5f66f502b14f178e7c54fb9fbcdff8e2 *R/scoreci.mp.R
 8fdfbe8025ea13d4c65e85a7510fd588 *R/wald2ci.R
 02f7640485c9219f5dc2cf5b3a9b4384 *R/z2stat.R
-6aaabe13b3e645a600b4fc1480a635ed *man/PropCIs-package.Rd
+3a7ca40a927164b38b037992e3400887 *README.md
+484d8ab3f73786af55e43595bf68ab6c *man/PropCIs-package.Rd
 8be96e905b0b11d67acad31a09e90e5b *man/acceptbin.Rd
 634fd2171f9b4b9e10f9cf8a0b31f1c6 *man/add4ci.Rd
 dac6477a2a528f1d6cef624f6138cdb2 *man/addz2ci.Rd
